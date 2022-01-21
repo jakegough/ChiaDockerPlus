@@ -17,8 +17,6 @@ RUN groupadd -g $GID -r chiagroup \
 
 ENV CHIA_ROOT=/data
 
-COPY docker-entrypoint-plus.sh /usr/local/bin/
+COPY docker-entrypoint.sh /usr/local/bin/
 
 USER $UID:$GID
-
-ENTRYPOINT ["docker-entrypoint-plus.sh"]
