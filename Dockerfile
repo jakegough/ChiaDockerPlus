@@ -20,4 +20,6 @@ FROM chianetwork/chia-docker:${CHIA_VERSION}
 RUN mv /usr/local/bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.original.sh
 COPY docker-entrypoint.sh /usr/local/bin/
 
+RUN chmod +x /usr/local/bin/docker-healthcheck.sh
+
 #USER $UID:$GID
