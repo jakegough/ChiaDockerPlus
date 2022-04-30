@@ -1,6 +1,6 @@
 PHONY: build
 
-CHIA_VERSION=1.2.11
+CHIA_VERSION=1.3.4
 DOCKER_TAG_NAME=jakegough/chia-network-plus
 
 build:
